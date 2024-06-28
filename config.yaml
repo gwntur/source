@@ -29,22 +29,6 @@ proxies:
       headers: 
         Host: id.vless.sbs
     udp: true
-  - name: VLESS TELE
-    server: ovo.id
-    port: 443
-    type: vmess
-    uuid: dee4fce4-1a57-468e-954e-24c8901942e3
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: 9391.vless.sbs
-    network: ws
-    ws-opts: 
-      path: /vmess-ws
-      headers: 
-        Host: 9391.vless.sbs
-    udp: true
   - name: JP TELE
     server: embed.tawk.to
     port: 80
@@ -121,4 +105,77 @@ proxies:
       path: /vless
       headers: 
         Host: v2ray.josvpn.me
+    udp: true
+  - name: TROJAN
+    server: poe.garena.com
+    port: 443
+    type: trojan
+    password: geo
+    skip-cert-verify: true
+    sni: jamur.geotunnel.biz.id
+    network: ws
+    ws-opts: 
+      path: /trojan
+      headers: 
+        Host: jamur.geotunnel.biz.id
+    udp: true
+  - name: SG TELE
+    server: ovo.id
+    port: 80
+    type: vless
+    uuid: 6e6cb97e-57ac-4e8f-ad90-2b2fbb21bc45
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: ovo.id
+    network: ws
+    ws-opts: 
+      path: /vless
+      headers: 
+        Host: id.jam.mahal.filegear-sg.me
+    udp: true
+  - name: AWS
+    server: ovo.id
+    port: 80
+    type: vless
+    uuid: 6e6cb97e-57ac-4e8f-ad90-2b2fbb21bc45
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: ovo.id
+    network: ws
+    ws-opts: 
+      path: /vless
+      headers: 
+        Host: aws.jam.mahal.filegear-sg.me
+    udp: true
+  - name: ALIBABA
+    server: poe.garena.com
+    port: 80
+    type: vless
+    uuid: 6e6cb97e-57ac-4e8f-ad90-2b2fbb21bc45
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: poe.garena.com
+    network: ws
+    ws-opts: 
+      path: /vless
+      headers: 
+        Host: alibaba.jam.mahal.filegear-sg.me
+    udp: true
+  - name: VULTR
+    server: ovo.id
+    port: 80
+    type: vless
+    uuid: 6e6cb97e-57ac-4e8f-ad90-2b2fbb21bc45
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: ovo.id
+    network: ws
+    ws-opts: 
+      path: /vless
+      headers: 
+        Host: vultr.jam.mahal.filegear-sg.me
     udp: true
