@@ -1,80 +1,18 @@
 proxies:
-  - name: SERVER JP
-    server: ovo.id
-    port: 443
-    type: vless
-    uuid: 0c39010d-4265-475f-9e4f-db013e3656fa
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: jp1.masfen.xyz
-    network: ws
-    ws-opts: 
-      path: /vless-ws
-      headers: 
-        Host: jp1.masfen.xyz
-    udp: true
-  - name: AXIS GAME
+  - name: TRIAL
     server: poe.garena.com
     port: 80
     type: vless
-    uuid: b2c3bf93-5349-4d5f-bfd7-3960e86d60ff
+    uuid: 3a694bdc-4f9c-471e-870b-66066fd669a6
     cipher: auto
     tls: false
     skip-cert-verify: true
     servername: poe.garena.com
     network: ws
     ws-opts: 
-      path: /vless
-      headers: 
-        Host: id.vless.sbs
-    udp: true
-  - name: JP TELE
-    server: embed.tawk.to
-    port: 80
-    type: vless
-    uuid: 97de2e74-0c83-402a-a472-fe6a7018f4af
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: embed.tawk.to
-    network: ws
-    ws-opts: 
       path: /vless-ws
       headers: 
-        Host: jp1.globalnet.my.id
-    udp: true
-  - name: GAME SG
-    server: poe.garena.com
-    port: 80
-    type: vmess
-    uuid: e00402ef-92f6-416a-b669-a0e736c9afc7
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: 
-    network: ws
-    ws-opts: 
-      path: /vmess
-      headers: 
-        Host: v2ray.josvpn.me
-    udp: true
-  - name: OPOK SG
-    server: ovo.id
-    port: 80
-    type: vmess
-    uuid: e00402ef-92f6-416a-b669-a0e736c9afc7
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: 
-    network: ws
-    ws-opts: 
-      path: /vmess
-      headers: 
-        Host: v2ray.josvpn.me
+        Host: sg01.ipxray.xyz
     udp: true
   - name: VLESS SG
     server: poe.garena.com
@@ -119,36 +57,6 @@ proxies:
       headers: 
         Host: jamur.geotunnel.biz.id
     udp: true
-  - name: SG TELE
-    server: ovo.id
-    port: 80
-    type: vless
-    uuid: 6e6cb97e-57ac-4e8f-ad90-2b2fbb21bc45
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: ovo.id
-    network: ws
-    ws-opts: 
-      path: /vless
-      headers: 
-        Host: id.jam.mahal.filegear-sg.me
-    udp: true
-  - name: AWS
-    server: ovo.id
-    port: 80
-    type: vless
-    uuid: 6e6cb97e-57ac-4e8f-ad90-2b2fbb21bc45
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: ovo.id
-    network: ws
-    ws-opts: 
-      path: /vless
-      headers: 
-        Host: aws.jam.mahal.filegear-sg.me
-    udp: true
   - name: ALIBABA
     server: poe.garena.com
     port: 80
@@ -163,19 +71,4 @@ proxies:
       path: /vless
       headers: 
         Host: alibaba.jam.mahal.filegear-sg.me
-    udp: true
-  - name: VULTR
-    server: ovo.id
-    port: 80
-    type: vless
-    uuid: 6e6cb97e-57ac-4e8f-ad90-2b2fbb21bc45
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: ovo.id
-    network: ws
-    ws-opts: 
-      path: /vless
-      headers: 
-        Host: vultr.jam.mahal.filegear-sg.me
     udp: true
