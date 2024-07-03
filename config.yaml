@@ -60,8 +60,8 @@ proxies:
         Host: sg3.sshsrv.pw
     udp: true
   - name: CREATESSH OPOK
-    server: ovo.id
-    port: 80
+    server:poe.garena.com
+    port: 443
     type: vless
     uuid: 8bc8585d-67f0-450e-9cb1-a7ea2d2f39c9
     cipher: auto
@@ -76,7 +76,7 @@ proxies:
     udp: true
   - name: CREATESSH TROJAN
     server: poe.garena.com
-    port: 80
+    port: 443
     type: trojan
     password: c1341bb8-420b-466c-98a1-8489535f75dd
     skip-cert-verify: true
@@ -86,21 +86,6 @@ proxies:
       path: /trojan
       headers: 
         Host: sg1trws.sshsrv.pw
-    udp: true
-  - name: PREMIUM TELE
-    server: cdn.appslayer.com
-    port: 443
-    type: vless
-    uuid: e1c8b915-915d-4b6d-8250-08a332a9c89f
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: vpnbumiayu.cloud
-    network: ws
-    ws-opts: 
-      path: /vless
-      headers: 
-        Host: vpnbumiayu.cloud
     udp: true
   - name: VLESS SG
     server: poe.garena.com
