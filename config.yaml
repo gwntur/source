@@ -1,36 +1,109 @@
 proxies:
-  - name: TRIAL
+  - name: SG VMESS
+    server: poe.garena.com
+    port: 80
+    type: vmess
+    uuid: c7a6a571-48b9-4667-9048-72e9359b1ca8
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    servername: 
+    network: ws
+    ws-opts: 
+      path: /vmess
+      headers: 
+        Host: v2ray.josvpn.me
+    udp: true
+  - name: SG VLESS
     server: poe.garena.com
     port: 80
     type: vless
-    uuid: 3a694bdc-4f9c-471e-870b-66066fd669a6
+    uuid: 05778680-f89b-4fc6-8858-480b4b29437f
     cipher: auto
     tls: false
     skip-cert-verify: true
     servername: poe.garena.com
     network: ws
     ws-opts: 
-      path: /vless-ws
+      path: /vless
       headers: 
-        Host: sg01.ipxray.xyz
+        Host: xdo.josvpn.me
     udp: true
-  - name: VLESS SG
+  - name: SG TROJAN
+    server: 104.16.156.36
+    port: 443
+    type: trojan
+    password: 5c56b15c-ecce-4f9b-bba9-79d13327db36
+    skip-cert-verify: true
+    sni: null
+    network: ws
+    ws-opts: 
+      path: /trojan
+      headers: 
+        Host: xdo.josvpn.me
+    udp: true
+  - name: CREATESSH GAME
     server: poe.garena.com
     port: 80
+    type: vmess
+    uuid: 4f435676-1a8e-44f4-8f08-e521b244bb44
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    servername: 
+    network: ws
+    ws-opts: 
+      path: /vmess
+      headers: 
+        Host: sg3.sshsrv.pw
+    udp: true
+  - name: CREATESSH OPOK
+    server: ovo.id
+    port: 80/
     type: vless
-    uuid: db85db67-cbaf-4792-9505-ee3316499a9f
+    uuid: 8bc8585d-67f0-450e-9cb1-a7ea2d2f39c9
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: ovo.id
+    servername: poe.garena.com
+    network: ws
+    ws-opts: 
+      path: /vless#CREATESSH 2
+      headers: 
+        Host: sg1vless.sshsrv.pw
+    udp: true
+  - name: CREATESSH TROJAN
+    server: poe.garena.com
+    port: 80
+    type: trojan
+    password: c1341bb8-420b-466c-98a1-8489535f75dd
+    skip-cert-verify: true
+    sni: poe.garena.com
+    network: ws
+    ws-opts: 
+      path: /trojan
+      headers: 
+        Host: sg1trws.sshsrv.pw
+    udp: true
+  - name: PREMIUM TELE
+    server: cdn.appslayer.com
+    port: 443
+    type: vless
+    uuid: e1c8b915-915d-4b6d-8250-08a332a9c89f
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: vpnbumiayu.cloud
     network: ws
     ws-opts: 
       path: /vless
       headers: 
-        Host: v2ray.josvpn.me
+        Host: vpnbumiayu.cloud
     udp: true
-  - name: CLOUDFRONT
-    server: 18.161.49.87
+  - name: VLESS SG
+    server: poe.garena.com
     port: 80
     type: vless
     uuid: db85db67-cbaf-4792-9505-ee3316499a9f
