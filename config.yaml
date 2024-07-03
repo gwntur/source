@@ -61,7 +61,7 @@ proxies:
     udp: true
   - name: CREATESSH OPOK
     server: ovo.id
-    port: 80/
+    port: 80
     type: vless
     uuid: 8bc8585d-67f0-450e-9cb1-a7ea2d2f39c9
     cipher: auto
@@ -70,7 +70,7 @@ proxies:
     servername: poe.garena.com
     network: ws
     ws-opts: 
-      path: /vless#CREATESSH 2
+      path: /vless
       headers: 
         Host: sg1vless.sshsrv.pw
     udp: true
