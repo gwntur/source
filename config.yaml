@@ -116,22 +116,6 @@ proxies:
       headers: 
         Host: xdo.josvpn.me
     udp: true
-  - name: CREATESSH GAME
-    server: poe.garena.com
-    port: 80
-    type: vmess
-    uuid: 4f435676-1a8e-44f4-8f08-e521b244bb44
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: 
-    network: ws
-    ws-opts: 
-      path: /vmess
-      headers: 
-        Host: sg3.sshsrv.pw
-    udp: true
   - name: VLESS SG
     server: poe.garena.com
     port: 80
@@ -177,22 +161,6 @@ proxies:
     udp: true
   - name: PREMIUM
     server: poe.garena.com
-    port: 80
-    type: vmess
-    uuid: b9bd2879-fd12-4c38-8bbe-15c25268b716
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: 
-    network: ws
-    ws-opts: 
-      path: /vmess
-      headers: 
-        Host: shared.bhm.my.id
-    udp: true
-  - name: GAME
-    server: cdn.appslyer.com
     port: 80
     type: vmess
     uuid: b9bd2879-fd12-4c38-8bbe-15c25268b716
