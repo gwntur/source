@@ -70,21 +70,6 @@ proxies:
     skip-cert-verify: false
     servername: 
     udp: true
-  - name: VLESS 3DAY
-    server: poe.garena.com
-    port: 80
-    type: vless
-    uuid: 01d483e7-1cb4-4ec0-bab7-ae3b449b2d12
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: poe.garena.com
-    network: ws
-    ws-opts: 
-      path: /vless
-      headers: 
-        Host: sg2vless.sshsrv.pw
-    udp: true
   - name: SG GAME TLS
     server: poe.garena.com
     port: 443
@@ -189,6 +174,38 @@ proxies:
       path: /vless
       headers: 
         Host: alibaba.jam.mahal.filegear-sg.me
+    udp: true
+  - name: PREMIUM
+    server: poe.garena.com
+    port: 80
+    type: vmess
+    uuid: b9bd2879-fd12-4c38-8bbe-15c25268b716
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    servername: 
+    network: ws
+    ws-opts: 
+      path: /vmess
+      headers: 
+        Host: shared.bhm.my.id
+    udp: true
+  - name: GAME
+    server: cdn.appslyer.com
+    port: 80
+    type: vmess
+    uuid: b9bd2879-fd12-4c38-8bbe-15c25268b716
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    servername: 
+    network: ws
+    ws-opts: 
+      path: /vmess
+      headers: 
+        Host: shared.bhm.my.id
     udp: true
   - name: TRIAL
     server: poe.garena.com
