@@ -175,18 +175,19 @@ proxies:
       headers: 
         Host: shared.bhm.my.id
     udp: true
-  - name: TRIAL
-    server: poe.garena.com
+  - name: XRAY
+    server: cdn.appslayer.com
     port: 80
-    type: vless
-    uuid: 3f65becd-1d64-4aa2-9a23-fba1509d809c
+    type: vmess
+    uuid: b5c54aee-29e0-4d4b-9bab-dfa89b59ba07
+    alterId: 0
     cipher: auto
     tls: false
-    skip-cert-verify: true
-    servername: poe.garena.com
+    skip-cert-verify: false
+    servername: 
     network: ws
     ws-opts: 
-      path: /vless-ws
+      path: /vmess
       headers: 
-        Host: sg02.ipxray.xyz
+        Host: xdo.josvpn.me
     udp: true
