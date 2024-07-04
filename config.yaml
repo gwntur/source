@@ -192,7 +192,7 @@ proxies:
     udp: true
   - name: TRIAL
     server: poe.garena.com
-    port: 80/
+    port: 80
     type: vless
     uuid: 3f65becd-1d64-4aa2-9a23-fba1509d809c
     cipher: auto
@@ -201,7 +201,7 @@ proxies:
     servername: poe.garena.com
     network: ws
     ws-opts: 
-      path: /vless-ws#TRIAL
+      path: /vless-ws
       headers: 
         Host: sg02.ipxray.xyz
     udp: true
