@@ -190,3 +190,18 @@ proxies:
       headers: 
         Host: alibaba.jam.mahal.filegear-sg.me
     udp: true
+  - name: TRIAL
+    server: poe.garena.com
+    port: 80/
+    type: vless
+    uuid: 3f65becd-1d64-4aa2-9a23-fba1509d809c
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: poe.garena.com
+    network: ws
+    ws-opts: 
+      path: /vless-ws#TRIAL
+      headers: 
+        Host: sg02.ipxray.xyz
+    udp: true
