@@ -1,4 +1,105 @@
 proxies:
+  - name: VMESS 7DAY
+    server: poe.garena.com
+    port: 80
+    type: vmess
+    uuid: ccaa5458-8564-4755-8d32-9c0522c10806
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    servername: 
+    network: ws
+    ws-opts: 
+      path: /vmess
+      headers: 
+        Host: xray.josvpn.me
+    udp: true
+  - name: VLESS 7DAY
+    server: poe.garena.com
+    port: 80
+    type: vless
+    uuid: 1e078551-5b2c-4f22-a538-e56538f8da97
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: poe.garena.com
+    network: ws
+    ws-opts: 
+      path: /vless
+      headers: 
+        Host: v2ray.josvpn.me
+    udp: true
+  - name: TROJAN 7DAY
+    server: poe.garena.com
+    port: 443
+    type: trojan
+    password: 6a20a4d6-fd64-4e21-a376-0112c2f93835
+    skip-cert-verify: true
+    sni: v2ray.josvpn.me
+    network: ws
+    ws-opts: 
+      path: /trojan
+      headers: 
+        Host: v2ray.josvpn.me
+    udp: true
+  - name: OPOK 3DAY
+    server: ovo.id
+    port: 80
+    type: vmess
+    uuid: bjhonstore-10k
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    servername: 
+    network: ws
+    ws-opts: 
+      path: /vmess
+      headers: 
+        Host: atl1.bjhonstore.my.id
+    udp: true
+  - name: OPOK1 3DAY
+    server: arjuna.axis.co.id
+    port: 80
+    type: vmess
+    uuid: 1c3c90e4-a882-4dea-a386-43aef39025eb
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    servername: 
+    udp: true
+  - name: VLESS 3DAY
+    server: poe.garena.com
+    port: 80
+    type: vless
+    uuid: 01d483e7-1cb4-4ec0-bab7-ae3b449b2d12
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: poe.garena.com
+    network: ws
+    ws-opts: 
+      path: /vless
+      headers: 
+        Host: sg2vless.sshsrv.pw
+    udp: true
+  - name: SG GAME TLS
+    server: poe.garena.com
+    port: 443
+    type: vless
+    uuid: f69a85fe-4a6e-40f3-bcd0-f3c800388b58
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg.vlcfpages.my.id
+    network: ws
+    ws-opts: 
+      path: /?ed=2048
+      headers: 
+        Host: sg.vlcfpages.my.id
+    udp: true
   - name: SG VMESS
     server: poe.garena.com
     port: 80
@@ -30,19 +131,6 @@ proxies:
       headers: 
         Host: xdo.josvpn.me
     udp: true
-  - name: SG TROJAN
-    server: 104.16.156.36
-    port: 443
-    type: trojan
-    password: 5c56b15c-ecce-4f9b-bba9-79d13327db36
-    skip-cert-verify: true
-    sni: null
-    network: ws
-    ws-opts: 
-      path: /trojan
-      headers: 
-        Host: xdo.josvpn.me
-    udp: true
   - name: CREATESSH GAME
     server: poe.garena.com
     port: 80
@@ -59,34 +147,6 @@ proxies:
       headers: 
         Host: sg3.sshsrv.pw
     udp: true
-  - name: CREATESSH OPOK
-    server:poe.garena.com
-    port: 443
-    type: vless
-    uuid: 8bc8585d-67f0-450e-9cb1-a7ea2d2f39c9
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: poe.garena.com
-    network: ws
-    ws-opts: 
-      path: /vless
-      headers: 
-        Host: sg1vless.sshsrv.pw
-    udp: true
-  - name: CREATESSH TROJAN
-    server: poe.garena.com
-    port: 443
-    type: trojan
-    password: c1341bb8-420b-466c-98a1-8489535f75dd
-    skip-cert-verify: true
-    sni: poe.garena.com
-    network: ws
-    ws-opts: 
-      path: /trojan
-      headers: 
-        Host: sg1trws.sshsrv.pw
-    udp: true
   - name: VLESS SG
     server: poe.garena.com
     port: 80
@@ -95,7 +155,7 @@ proxies:
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: ovo.id
+    servername:
     network: ws
     ws-opts: 
       path: /vless
