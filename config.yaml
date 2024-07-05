@@ -174,7 +174,7 @@ proxies:
     servername: sg.vlcfpages.my.id
     network: ws
     ws-opts: 
-      path: /?ed=2048
+      path: /vless
       headers: 
         Host: sg.vlcfpages.my.id
     udp: true
