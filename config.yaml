@@ -43,33 +43,6 @@ proxies:
       headers: 
         Host: v2ray.josvpn.me
     udp: true
-  - name: OPOK 3DAY
-    server: ovo.id
-    port: 80
-    type: vmess
-    uuid: bjhonstore-10k
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: 
-    network: ws
-    ws-opts: 
-      path: /vmess
-      headers: 
-        Host: atl1.bjhonstore.my.id
-    udp: true
-  - name: OPOK1 3DAY
-    server: arjuna.axis.co.id
-    port: 80
-    type: vmess
-    uuid: 1c3c90e4-a882-4dea-a386-43aef39025eb
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: 
-    udp: true
   - name: SG GAME TLS
     server: poe.garena.com
     port: 443
@@ -199,7 +172,7 @@ proxies:
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: cdn.appslyer.com
+    servername:
     network: ws
     ws-opts: 
       path: /vless-ws
