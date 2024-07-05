@@ -148,19 +148,6 @@ proxies:
       headers: 
         Host: shared.bhm.my.id
     udp: true
-  - name: Simple
-    server: poe.garena.com
-    port: 443
-    type: trojan
-    password: 495449ec-5240-4d2e-b8cd-3695b109d1aa
-    skip-cert-verify: true
-    sni: sg01.iptr.xyz
-    network: ws
-    ws-opts: 
-      path: /trojan-ws
-      headers: 
-        Host: sg01.iptr.xyz
-    udp: true
   - name: ID VLESS
     server: poe.garena.com
     port: 443
