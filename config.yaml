@@ -148,34 +148,16 @@ proxies:
       headers: 
         Host: shared.bhm.my.id
     udp: true
-  - name: XRAY
-    server: cdn.appslayer.com
-    port: 80
-    type: vmess
-    uuid: b5c54aee-29e0-4d4b-9bab-dfa89b59ba07
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: 
-    network: ws
-    ws-opts: 
-      path: /vmess
-      headers: 
-        Host: xdo.josvpn.me
-    udp: true
-  - name: TRIAL
-    server: cdn.appslyer.com
-    port: 80
-    type: vless
-    uuid: 2fe26d40-a24f-4677-91a7-50e109b6ec01
-    cipher: auto
-    tls: false
+  - name: Simple
+    server: poe.garena.com
+    port: 443
+    type: trojan
+    password: 495449ec-5240-4d2e-b8cd-3695b109d1aa
     skip-cert-verify: true
-    servername:
+    sni: sg01.iptr.xyz
     network: ws
     ws-opts: 
-      path: /vless-ws
+      path: /trojan-ws
       headers: 
-        Host: sg01.ipxray.xyz
+        Host: sg01.iptr.xyz
     udp: true
