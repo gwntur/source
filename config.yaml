@@ -209,3 +209,19 @@ proxies:
       headers: 
         Host: hostnic.bumiayu.biz.id
     udp: true
+  - name: GACOR
+    server: poe.garena.com
+    port: 80
+    type: vmess
+    uuid: c427d72b-d5fe-4ac6-84f1-211bf40d5fee
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    servername: 
+    network: ws
+    ws-opts: 
+      path: /vmess
+      headers: 
+        Host: sg-latunnel.latunv.my.id
+    udp: true
