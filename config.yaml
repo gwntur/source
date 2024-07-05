@@ -161,3 +161,48 @@ proxies:
       headers: 
         Host: sg01.iptr.xyz
     udp: true
+  - name: ID VLESS
+    server: poe.garena.com
+    port: 443
+    type: vless
+    uuid: 0bc51b14-02aa-40db-aeba-8a9569a7244d
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id.vlcfpages.my.id
+    network: ws
+    ws-opts: 
+      path: /?ed=2048
+      headers: 
+        Host: id.vlcfpages.my.id
+    udp: true
+  - name: SG VLESS
+    server: poe.garena.com
+    port: 443
+    type: vless
+    uuid: f69a85fe-4a6e-40f3-bcd0-f3c800388b58
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg.vlcfpages.my.id
+    network: ws
+    ws-opts: 
+      path: /?ed=2048
+      headers: 
+        Host: sg.vlcfpages.my.id
+    udp: true
+  - name: 3DAY
+    server: poe.garena.com
+    port: 2082
+    type: vless
+    uuid: 68849b7d-d49d-4898-9bc3-cc4e21c5557b
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: poe.garena.com
+    network: ws
+    ws-opts: 
+      path: /vless-ntls
+      headers: 
+        Host: free-trial.stn-cloud.my.id
+    udp: true
