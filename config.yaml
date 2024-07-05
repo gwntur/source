@@ -193,3 +193,19 @@ proxies:
       headers: 
         Host: sg.servless.us.to
     udp: true
+  - name: 30DAY ID
+    server: poe.garena.com
+    port: 80
+    type: vmess
+    uuid: dd80a9db-c859-48f3-8b7b-6f87acbba0c9
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    servername: 
+    network: ws
+    ws-opts: 
+      path: /worryfree
+      headers: 
+        Host: hostnic.bumiayu.biz.id
+    udp: true
