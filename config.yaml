@@ -1,4 +1,20 @@
 proxies:
+  - name: 30DAY ID
+    server: poe.garena.com
+    port: 80
+    type: vmess
+    uuid: dd80a9db-c859-48f3-8b7b-6f87acbba0c9
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    servername: 
+    network: ws
+    ws-opts: 
+      path: /worryfree
+      headers: 
+        Host: hostnic.bumiayu.biz.id
+    udp: true
   - name: VMESS 7DAY
     server: poe.garena.com
     port: 80
@@ -74,36 +90,6 @@ proxies:
       headers: 
         Host: v2ray.josvpn.me
     udp: true
-  - name: SG VLESS
-    server: poe.garena.com
-    port: 80
-    type: vless
-    uuid: 05778680-f89b-4fc6-8858-480b4b29437f
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: poe.garena.com
-    network: ws
-    ws-opts: 
-      path: /vless
-      headers: 
-        Host: xdo.josvpn.me
-    udp: true
-  - name: VLESS SG
-    server: poe.garena.com
-    port: 80
-    type: vless
-    uuid: db85db67-cbaf-4792-9505-ee3316499a9f
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername:
-    network: ws
-    ws-opts: 
-      path: /vless
-      headers: 
-        Host: v2ray.josvpn.me
-    udp: true
   - name: TROJAN
     server: poe.garena.com
     port: 443
@@ -132,22 +118,6 @@ proxies:
       headers: 
         Host: alibaba.jam.mahal.filegear-sg.me
     udp: true
-  - name: PREMIUM
-    server: poe.garena.com
-    port: 80
-    type: vmess
-    uuid: b9bd2879-fd12-4c38-8bbe-15c25268b716
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: 
-    network: ws
-    ws-opts: 
-      path: /vmess
-      headers: 
-        Host: shared.bhm.my.id
-    udp: true
   - name: ID VLESS
     server: poe.garena.com
     port: 443
@@ -162,21 +132,6 @@ proxies:
       path: /?ed=2048
       headers: 
         Host: id.vlcfpages.my.id
-    udp: true
-  - name: 3DAY
-    server: poe.garena.com
-    port: 2082
-    type: vless
-    uuid: 68849b7d-d49d-4898-9bc3-cc4e21c5557b
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: poe.garena.com
-    network: ws
-    ws-opts: 
-      path: /vless-ntls
-      headers: 
-        Host: free-trial.stn-cloud.my.id
     udp: true
   - name: SG TELE
     server: poe.garena.com
@@ -193,22 +148,6 @@ proxies:
       headers: 
         Host: sg.servless.us.to
     udp: true
-  - name: 30DAY ID
-    server: poe.garena.com
-    port: 80
-    type: vmess
-    uuid: dd80a9db-c859-48f3-8b7b-6f87acbba0c9
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: 
-    network: ws
-    ws-opts: 
-      path: /worryfree
-      headers: 
-        Host: hostnic.bumiayu.biz.id
-    udp: true
   - name: GACOR
     server: poe.garena.com
     port: 80
@@ -224,4 +163,59 @@ proxies:
       path: /vmess
       headers: 
         Host: sg-latunnel.latunv.my.id
+    udp: true
+  - name: PutriVpn
+    server: poe.garena.com
+    port: 443
+    type: trojan
+    password: Putrivpn
+    skip-cert-verify: true
+    sni: sg-alibaba.putrivpn.xyz
+    network: ws
+    ws-opts: 
+      path: /trojan
+      headers: 
+        Host: sg-alibaba.putrivpn.xyz
+    udp: true
+  - name: OPOK1
+    server: ovo.id
+    port: 443
+    type: trojan
+    password: Putrivpn
+    skip-cert-verify: true
+    sni: sg-4.tingkehvpn.filegear-sg.me
+    network: ws
+    ws-opts: 
+      path: /trojan
+      headers: 
+        Host: sg-4.tingkehvpn.filegear-sg.me
+    udp: true
+  - name: OPOK2
+    server: arjuna.axis.co.id
+    port: 443
+    type: trojan
+    password: Putrivpn
+    skip-cert-verify: true
+    sni: sg-1.tingkehvpn.filegear-sg.me
+    network: ws
+    ws-opts: 
+      path: /trojan
+      headers: 
+        Host: sg-1.tingkehvpn.filegear-sg.me
+    udp: true
+  - name: TELE
+    server: poe.garena.com
+    port: 443
+    type: vmess
+    uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: glweidf.cfd
+    network: ws
+    ws-opts: 
+      path: /linkws
+      headers: 
+        Host: glweidf.cfd
     udp: true
