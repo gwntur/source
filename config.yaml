@@ -90,8 +90,8 @@ proxies:
       headers: 
         Host: v2ray.josvpn.me
     udp: true
-  - name: TROJAN
-    server: poe.garena.com
+  - name: TROJAN SUSHIROLL
+    server: 172.67.213.134
     port: 443
     type: trojan
     password: geo
@@ -147,22 +147,6 @@ proxies:
       path: /vlesscf
       headers: 
         Host: sg.servless.us.to
-    udp: true
-  - name: GACOR
-    server: poe.garena.com
-    port: 80
-    type: vmess
-    uuid: c427d72b-d5fe-4ac6-84f1-211bf40d5fee
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: 
-    network: ws
-    ws-opts: 
-      path: /vmess
-      headers: 
-        Host: sg-latunnel.latunv.my.id
     udp: true
   - name: PutriVpn
     server: poe.garena.com
