@@ -15,8 +15,8 @@ proxies:
       headers: 
         Host: hostnic.bumiayu.biz.id
     udp: true
-  - name: VMESS 7DAY
-    server: poe.garena.com
+  - name: VMESS SUSHIROLL
+    server: www.sushiroll.co.id
     port: 80
     type: vmess
     uuid: ccaa5458-8564-4755-8d32-9c0522c10806
@@ -91,7 +91,7 @@ proxies:
         Host: v2ray.josvpn.me
     udp: true
   - name: TROJAN SUSHIROLL
-    server: 172.67.213.134
+    server: www.sushiroll.co.id
     port: 443
     type: trojan
     password: geo
