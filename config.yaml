@@ -15,83 +15,8 @@ proxies:
       headers: 
         Host: hostnic.bumiayu.biz.id
     udp: true
-  - name: VMESS SUSHIROLL
-    server: www.sushiroll.co.id
-    port: 80
-    type: vmess
-    uuid: ccaa5458-8564-4755-8d32-9c0522c10806
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: 
-    network: ws
-    ws-opts: 
-      path: /vmess
-      headers: 
-        Host: xray.josvpn.me
-    udp: true
-  - name: VLESS 7DAY
-    server: poe.garena.com
-    port: 80
-    type: vless
-    uuid: 1e078551-5b2c-4f22-a538-e56538f8da97
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: poe.garena.com
-    network: ws
-    ws-opts: 
-      path: /vless
-      headers: 
-        Host: v2ray.josvpn.me
-    udp: true
-  - name: TROJAN 7DAY
-    server: poe.garena.com
-    port: 443
-    type: trojan
-    password: 6a20a4d6-fd64-4e21-a376-0112c2f93835
-    skip-cert-verify: true
-    sni: v2ray.josvpn.me
-    network: ws
-    ws-opts: 
-      path: /trojan
-      headers: 
-        Host: v2ray.josvpn.me
-    udp: true
-  - name: SG GAME TLS
-    server: poe.garena.com
-    port: 443
-    type: vless
-    uuid: f69a85fe-4a6e-40f3-bcd0-f3c800388b58
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: sg.vlcfpages.my.id
-    network: ws
-    ws-opts: 
-      path: /?ed=2048
-      headers: 
-        Host: sg.vlcfpages.my.id
-    udp: true
-  - name: SG VMESS
-    server: poe.garena.com
-    port: 80
-    type: vmess
-    uuid: c7a6a571-48b9-4667-9048-72e9359b1ca8
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: 
-    network: ws
-    ws-opts: 
-      path: /vmess
-      headers: 
-        Host: v2ray.josvpn.me
-    udp: true
-  - name: TROJAN SUSHIROLL
-    server: www.sushiroll.co.id
+  - name: TROJAN 443
+    server: cdn.appslayer.com
     port: 443
     type: trojan
     password: geo
@@ -149,7 +74,7 @@ proxies:
         Host: sg.servless.us.to
     udp: true
   - name: PutriVpn
-    server: poe.garena.com
+    server: ovo.id
     port: 443
     type: trojan
     password: Putrivpn
@@ -202,4 +127,20 @@ proxies:
       path: /linkws
       headers: 
         Host: glweidf.cfd
+    udp: true
+  - name: Trial
+    server: ovo.id
+    port: 80
+    type: vmess
+    uuid: d5e58faa-08d9-4428-aa7f-d8dcdf03d38a
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    servername: 
+    network: ws
+    ws-opts: 
+      path: /vmess-ws
+      headers: 
+        Host: ctb-sg03.ipv2ray.xyz
     udp: true
