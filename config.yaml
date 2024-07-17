@@ -15,24 +15,27 @@ proxies:
       headers: 
         Host: hostnic.bumiayu.biz.id
     udp: true
-  - name: TROJAN 443
-    server: cdn.appslayer.com
-    port: 443
-    type: trojan
-    password: geo
-    skip-cert-verify: true
-    sni: jamur.geotunnel.biz.id
+  - name: VMESS OPOK
+    server: ovo.id
+    port: 80
+    type: vmess
+    uuid: f090abaa-1bbe-4ebf-9190-c275931c2b54
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    servername: 
     network: ws
     ws-opts: 
-      path: /trojan
+      path: /vmess
       headers: 
-        Host: jamur.geotunnel.biz.id
+        Host: aray.okgas.me
     udp: true
-  - name: ALIBABA
+  - name: VLESS GAME
     server: poe.garena.com
     port: 80
     type: vless
-    uuid: 6e6cb97e-57ac-4e8f-ad90-2b2fbb21bc45
+    uuid: 4b35055a-c488-4e79-bb51-c47206e48afc
     cipher: auto
     tls: false
     skip-cert-verify: true
@@ -41,82 +44,13 @@ proxies:
     ws-opts: 
       path: /vless
       headers: 
-        Host: alibaba.jam.mahal.filegear-sg.me
+        Host: aray.okgas.me
     udp: true
-  - name: ID VLESS
-    server: poe.garena.com
-    port: 443
-    type: vless
-    uuid: 0bc51b14-02aa-40db-aeba-8a9569a7244d
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: id.vlcfpages.my.id
-    network: ws
-    ws-opts: 
-      path: /?ed=2048
-      headers: 
-        Host: id.vlcfpages.my.id
-    udp: true
-  - name: SG TELE
-    server: poe.garena.com
-    port: 80
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: poe.garena.com
-    network: ws
-    ws-opts: 
-      path: /vlesscf
-      headers: 
-        Host: sg.servless.us.to
-    udp: true
-  - name: PutriVpn
-    server: ovo.id
-    port: 443
-    type: trojan
-    password: Putrivpn
-    skip-cert-verify: true
-    sni: sg-alibaba.putrivpn.xyz
-    network: ws
-    ws-opts: 
-      path: /trojan
-      headers: 
-        Host: sg-alibaba.putrivpn.xyz
-    udp: true
-  - name: OPOK1
-    server: ovo.id
-    port: 443
-    type: trojan
-    password: Putrivpn
-    skip-cert-verify: true
-    sni: sg-4.tingkehvpn.filegear-sg.me
-    network: ws
-    ws-opts: 
-      path: /trojan
-      headers: 
-        Host: sg-4.tingkehvpn.filegear-sg.me
-    udp: true
-  - name: OPOK2
-    server: arjuna.axis.co.id
-    port: 443
-    type: trojan
-    password: Putrivpn
-    skip-cert-verify: true
-    sni: sg-1.tingkehvpn.filegear-sg.me
-    network: ws
-    ws-opts: 
-      path: /trojan
-      headers: 
-        Host: sg-1.tingkehvpn.filegear-sg.me
-    udp: true
-  - name: Trial
+  - name: TELE
     server: ovo.id
     port: 80
     type: vmess
-    uuid: d5e58faa-08d9-4428-aa7f-d8dcdf03d38a
+    uuid: 1b6f10ef-f678-43f5-8fe5-9498a61a69d8
     alterId: 0
     cipher: auto
     tls: false
@@ -124,7 +58,7 @@ proxies:
     servername: 
     network: ws
     ws-opts: 
-      path: /vmess-ws
+      path: /vmess
       headers: 
-        Host: ctb-sg03.ipv2ray.xyz
+        Host: biz.caliphvpn.cloud
     udp: true
